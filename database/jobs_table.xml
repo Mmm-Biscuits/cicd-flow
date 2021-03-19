@@ -5,10 +5,9 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="35b380c989a9df6cae1ab30a6a0b7dd388a66b28" author="(GARY)-Generated" failOnError="false"    >
-		<n0:createSxmlObject objectName="JOBS" objectType="TABLE" ownerName="GARY"   >
-			<n0:source><![CDATA[
-  <TABLE xmlns="http://xmlns.oracle.com/ku" version="1.0">
+	<changeSet id="fba768c6b36f1f8e0ed5ec0127dec509f4df4bd9" author="(GARY)-Generated" failOnError="false"    >
+		<n0:createSxmlObject objectName="JOBS" objectType="table" ownerName="GARY"   >
+			<n0:source><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?><TABLE xmlns="http://xmlns.oracle.com/ku" version="1.0">
    <SCHEMA>GARY</SCHEMA>
    <NAME>JOBS</NAME>
    <RELATIONAL_TABLE>
@@ -39,6 +38,10 @@
             <DATATYPE>NUMBER</DATATYPE>
             <PRECISION>6</PRECISION>
             <SCALE>0</SCALE>
+         </COL_LIST_ITEM>
+         <COL_LIST_ITEM>
+            <NAME>JOB_POSTING_NUMBER</NAME>
+            <DATATYPE>NUMBER</DATATYPE>
          </COL_LIST_ITEM>
       </COL_LIST>
       <PRIMARY_KEY_CONSTRAINT_LIST>
@@ -76,7 +79,7 @@
       <PHYSICAL_PROPERTIES>
          <HEAP_TABLE>
             <SEGMENT_ATTRIBUTES>
-               <SEGMENT_CREATION_IMMEDIATE></SEGMENT_CREATION_IMMEDIATE>
+               <SEGMENT_CREATION_IMMEDIATE/>
                <PCTFREE>10</PCTFREE>
                <PCTUSED>40</PCTUSED>
                <INITRANS>10</INITRANS>
